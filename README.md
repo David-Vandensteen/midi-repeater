@@ -2,16 +2,12 @@
 
 ## Instal
 ```cmd
-npm i easymidi
-```
-```cmd
-npm i git@github.com:David-Vandensteen/midi-repeater.git#release/1.0.0
+npm i git@github.com:David-Vandensteen/midi-repeater.git#release/1.0.1
 ```
 
 ## Example
 ```javascript
-import easymidi from 'easymidi';
-import { MidiRepeater } from 'midi-repeater';
+import { easymidi, MidiRepeater } from 'midi-repeater';
 
 const { log } = console;
 
