@@ -1,4 +1,5 @@
+import easymidi from 'easymidi';
 import { MidiRepeater } from '#src/lib/midi-repeater';
 
 export default MidiRepeater;
-export { MidiRepeater };
+export { easymidi, MidiRepeater };

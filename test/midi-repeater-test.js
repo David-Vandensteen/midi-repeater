@@ -1,5 +1,4 @@
-import easymidi from 'easymidi';
-import { MidiRepeater } from '#src/index';
+import { easymidi, MidiRepeater } from '#src/index';
 
 const { log } = console;
 
