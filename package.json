@@ -1,0 +1,30 @@
+{
+  "name": "midi-repeater",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "serve": "nodemon --watch src -e js src/index.js",
+    "lint": "eslint src test",
+    "test": "node test/midi-repeater-test.js"
+  },
+  "author": "David Vandensteen <dvandensteen@gmail.com>",
+  "license": "MIT",
+  "imports": {
+    "#src/*": "./src/*.js"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.29.1",
+    "nodemon": "^3.0.2"
+  },
+  "dependencies": {
+    "custom-console-log": "github:David-Vandensteen/custom-console-log#release/1.0.0",
+    "death": "^1.1.0",
+    "easymidi": "^3.1.0"
+  }
+}
