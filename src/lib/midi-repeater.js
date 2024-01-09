@@ -42,7 +42,8 @@ export default class MidiRepeater extends EventEmitter {
           log.dev('send', event, 'message', sanitizeMesssage);
           log.dev('to', this.#midiOutInstance.name);
 
-          this.#midiOutInstance.send(event, sanitizeMesssage);
+          if (event === 'sysex') this.#midiOutInstance.send(event, sanitizeMesssage.bytes);
+          else this.#midiOutInstance.send(event, sanitizeMesssage);
 
           if (this.#emit === true) {
             log.dev('');
