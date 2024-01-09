@@ -1,8 +1,8 @@
 # midi-repeater
 
-## Instal
+## Install
 ```cmd
-npm i git@github.com:David-Vandensteen/midi-repeater.git#release/1.0.1
+npm i git@github.com:David-Vandensteen/midi-repeater.git#release/1.0.2
 ```
 
 ## Example
